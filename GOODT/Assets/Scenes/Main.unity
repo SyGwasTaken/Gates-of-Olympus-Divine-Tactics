@@ -8914,7 +8914,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  isMoving: 0
 --- !u!95 &1612150125
 Animator:
   serializedVersion: 7
