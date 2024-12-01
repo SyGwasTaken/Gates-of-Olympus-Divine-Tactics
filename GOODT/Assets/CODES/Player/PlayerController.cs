@@ -6,8 +6,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public bool isMoving;
     private Vector2 input;
-
-
+    private Animator animator;
     private void Update()
     {
         if (!isMoving)
@@ -15,8 +14,14 @@ public class PlayerController : MonoBehaviour
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
 
+            //Removing diagonal movements
+            if (input.x != 0) input.y = 0;
+            
             if (input != Vector2.zero)
             {
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+
                 var targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
