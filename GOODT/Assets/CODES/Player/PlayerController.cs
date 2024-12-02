@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        if(Physics2D.OverlapCircle(targetPos, 0.2f, SolidObjectsLayer) != null)
+        if(Physics2D.OverlapCircle(targetPos, 0.1f, SolidObjectsLayer) != null)
         {
             return false;
         }
