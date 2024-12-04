@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
     public LayerMask SolidObjectsLayer;
+    public LayerMask InteractablesLayer;
     private bool isMoving;
     private Vector2 input;
     
@@ -37,6 +38,23 @@ public class PlayerController : MonoBehaviour
             }
         }
                 animator.SetBool("isMoving", isMoving);
+
+                if(Input.GetKeyDown(KeyCode.F))
+                    interact();
+    }
+
+    void interact()
+    {
+        var faceDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var interactpos = transform.position + faceDir;
+
+        Debug.DrawLine(transform.position, interactpos, Color.green, 0.5f);
+
+        var collider = Physics2D.OverlapCircle(interactpos, 0.5f, InteractablesLayer);
+        if (collider != null)
+        {
+            collider.GetComponent<Interactables>()?.Interact();
+        }
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -56,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        if(Physics2D.OverlapCircle(targetPos, 0.1f, SolidObjectsLayer) != null)
+        if(Physics2D.OverlapCircle(targetPos, 0.1f, SolidObjectsLayer | InteractablesLayer) != null)
         {
             return false;
         }
