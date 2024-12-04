@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour, Interactables
 {
+    [SerializeField] Dialog dialog;
     public void Interact()
     {
-        Debug.Log("interacting with NPC");
+        DialogManager.Instance.ShowDialog(dialog);
     }
 }
