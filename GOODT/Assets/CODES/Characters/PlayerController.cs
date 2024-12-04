@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     
     private Animator animator;
+    public static object Instance { get; internal set; }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
-    private void Update()
+    public void HandleUpdate()
     {
         if (!isMoving)
         {
@@ -83,5 +85,5 @@ public class PlayerController : MonoBehaviour
         }
 
         return true;
-    } 
+    }
 }
