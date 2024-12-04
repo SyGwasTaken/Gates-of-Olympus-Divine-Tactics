@@ -747,7 +747,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprite-sheet-b-183-123_0: -1937349601187026274
+      sprite-sheet-b-183-123_1: -3238883947309956738
+      sprite-sheet-b-183-123_10: -1352115511917601169
+      sprite-sheet-b-183-123_11: -6211473368422740199
+      sprite-sheet-b-183-123_12: -7721397707235751176
+      sprite-sheet-b-183-123_13: 3404549858784097252
+      sprite-sheet-b-183-123_14: -6826683136113843182
+      sprite-sheet-b-183-123_15: 1914763003812560877
+      sprite-sheet-b-183-123_16: -595647568148012254
+      sprite-sheet-b-183-123_17: 6343685202755804341
+      sprite-sheet-b-183-123_18: 1526388775508791707
+      sprite-sheet-b-183-123_19: 5714365877755328719
+      sprite-sheet-b-183-123_2: -8173243471208239650
+      sprite-sheet-b-183-123_20: -7663057488318092602
+      sprite-sheet-b-183-123_21: -4164196384679908908
+      sprite-sheet-b-183-123_22: 7510446277416229355
+      sprite-sheet-b-183-123_23: 2066532412334113092
+      sprite-sheet-b-183-123_24: 3974601091953585825
+      sprite-sheet-b-183-123_3: -5823848422722629834
+      sprite-sheet-b-183-123_4: -3935447094680956372
+      sprite-sheet-b-183-123_5: -4168412915705247567
+      sprite-sheet-b-183-123_6: -7726630363430067064
+      sprite-sheet-b-183-123_7: 6607462108884283435
+      sprite-sheet-b-183-123_8: -8434627671023123045
+      sprite-sheet-b-183-123_9: -6456350941362064466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

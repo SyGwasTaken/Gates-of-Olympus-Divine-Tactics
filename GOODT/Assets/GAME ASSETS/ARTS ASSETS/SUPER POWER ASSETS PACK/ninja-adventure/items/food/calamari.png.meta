@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      calamari_0: -1978644924305509745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

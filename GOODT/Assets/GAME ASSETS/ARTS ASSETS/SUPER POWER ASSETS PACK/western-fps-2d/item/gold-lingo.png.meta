@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gold-lingo_0: 7837668306401522868
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

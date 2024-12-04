@@ -397,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      little-boy_0: -2660902646115255405
+      little-boy_1: -8609803685129773367
+      little-boy_10: -2613641742470237105
+      little-boy_2: -978217363475573191
+      little-boy_3: 1213213817246345556
+      little-boy_4: -7522910123785196885
+      little-boy_5: 4068278345258131247
+      little-boy_6: -3152018858092139272
+      little-boy_7: 2598768558772682749
+      little-boy_8: 7950076437096298002
+      little-boy_9: 3232294435142312471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

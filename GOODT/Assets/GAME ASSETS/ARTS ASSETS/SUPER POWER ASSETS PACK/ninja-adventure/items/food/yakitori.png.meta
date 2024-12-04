@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      yakitori_0: 2245098736436319872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

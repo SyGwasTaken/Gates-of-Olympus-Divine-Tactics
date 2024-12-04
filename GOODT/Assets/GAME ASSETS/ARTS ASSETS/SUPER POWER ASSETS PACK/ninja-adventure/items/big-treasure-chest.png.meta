@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      big-treasure-chest_0: -8709253015153644930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sheriff-badge _0: 6723797475208004625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

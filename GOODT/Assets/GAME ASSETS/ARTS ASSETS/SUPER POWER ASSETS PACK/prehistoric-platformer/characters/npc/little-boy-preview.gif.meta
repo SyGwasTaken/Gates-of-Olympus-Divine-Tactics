@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      little-boy-preview_0: 4786479575674356916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
