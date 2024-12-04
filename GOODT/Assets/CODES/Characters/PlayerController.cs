@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     
     private Animator animator;
+    public static object Instance { get; internal set; }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
-    private void Update()
+    public void HandleUpdate()
     {
         if (!isMoving)
         {
@@ -40,7 +42,10 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isMoving", isMoving);
 
                 if(Input.GetKeyDown(KeyCode.F))
+                {
+                    Debug.Log("Interact button pressed");
                     interact();
+                }
     }
 
     void interact()
@@ -48,9 +53,9 @@ public class PlayerController : MonoBehaviour
         var faceDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
         var interactpos = transform.position + faceDir;
 
-        Debug.DrawLine(transform.position, interactpos, Color.green, 0.5f);
+        //Debug.DrawLine(transform.position, interactpos, Color.green, 0.5f);
 
-        var collider = Physics2D.OverlapCircle(interactpos, 0.5f, InteractablesLayer);
+        var collider = Physics2D.OverlapCircle(interactpos, 0.3f, InteractablesLayer);
         if (collider != null)
         {
             collider.GetComponent<Interactables>()?.Interact();
@@ -80,5 +85,5 @@ public class PlayerController : MonoBehaviour
         }
 
         return true;
-    } 
+    }
 }
