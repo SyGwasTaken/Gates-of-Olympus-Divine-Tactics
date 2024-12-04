@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blacksmith_0: -8337281393119725202
+      blacksmith_1: 4985709116817403318
+      blacksmith_10: 4371555698627998308
+      blacksmith_11: 3139513691669098749
+      blacksmith_12: -8703974355314259059
+      blacksmith_13: -6740119888540139739
+      blacksmith_14: 4363600579097052679
+      blacksmith_15: -8829566253206540945
+      blacksmith_16: -6850584765329524210
+      blacksmith_2: 9022655004868857870
+      blacksmith_3: -1351862307091105770
+      blacksmith_4: -4706598241568310797
+      blacksmith_5: 4004983679022233800
+      blacksmith_6: 716566025040699227
+      blacksmith_7: 133815585985376420
+      blacksmith_8: -8656902207366846496
+      blacksmith_9: 7973058562625843597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

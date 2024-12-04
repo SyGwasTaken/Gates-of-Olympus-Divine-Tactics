@@ -972,7 +972,41 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      title-font_0: 4678570435661874216
+      title-font_1: 276182217402794392
+      title-font_10: 5072100441172996854
+      title-font_11: 2771223418881124292
+      title-font_12: -5667057863852638479
+      title-font_13: 838296033420606095
+      title-font_14: -2602604809784541511
+      title-font_15: 956725730273019246
+      title-font_16: 934135163563789648
+      title-font_17: 3311950359486237501
+      title-font_18: 2836332229726759178
+      title-font_19: 5294099783363010861
+      title-font_2: 6062816138974985696
+      title-font_20: 3181452292323799147
+      title-font_21: 6978024883350651151
+      title-font_22: -4407616689551548267
+      title-font_23: 5583778451280959042
+      title-font_24: 7799544115168254444
+      title-font_25: -1797306912294249114
+      title-font_26: 4363839244883160779
+      title-font_27: -1112435417490212314
+      title-font_28: -3947319654810211367
+      title-font_29: 5192802616801327341
+      title-font_3: 6167167327655141189
+      title-font_30: 452534237723649752
+      title-font_31: 5329069562978457695
+      title-font_32: -5184323688506528328
+      title-font_33: 7199640820279127672
+      title-font_4: -3828341874906024811
+      title-font_5: 2962425634301916452
+      title-font_6: 1419427470706721948
+      title-font_7: -3189972244625771155
+      title-font_8: -717804531204140282
+      title-font_9: 2459358875919793946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

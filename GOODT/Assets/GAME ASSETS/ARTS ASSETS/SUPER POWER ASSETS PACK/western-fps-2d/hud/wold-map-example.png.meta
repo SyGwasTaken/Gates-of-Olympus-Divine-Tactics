@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wold-map-example_0: 7205832543148380302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      title-font_0: 4678570435661874216
+      title-font_1: 276182217402794392
+      title-font_2: 6062816138974985696
+      title-font_3: 6167167327655141189
+      title-font_4: -3828341874906024811
+      title-font_5: 2962425634301916452
+      title-font_6: 1419427470706721948
+      title-font_7: -3189972244625771155
+      title-font_8: -717804531204140282
+      title-font_9: 2459358875919793946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

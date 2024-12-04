@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icon-leonard_0: 9165057547833759886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lives-icon_0: 4056437792676486555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      life-box-empty-2_0: -4909946087616759979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

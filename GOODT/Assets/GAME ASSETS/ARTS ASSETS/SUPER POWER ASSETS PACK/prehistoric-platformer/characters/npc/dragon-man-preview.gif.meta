@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dragon-man-preview_0: -2145444548673596199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

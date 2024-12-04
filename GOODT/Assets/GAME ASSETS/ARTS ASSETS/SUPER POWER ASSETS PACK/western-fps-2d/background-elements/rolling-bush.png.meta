@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rolling-bush_0: 2411703303446393450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
