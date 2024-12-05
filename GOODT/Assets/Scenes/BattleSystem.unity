@@ -337,11 +337,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1310821221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 5.9840145, y: 0}
   m_SizeDelta: {x: 62.54, y: 33.07}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &577188948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,11 +412,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1628298915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 5.984001, y: 0}
   m_SizeDelta: {x: 62.54, y: 33.07}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &580266538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054233128581102243, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: m_Name
-      value: RangePrefab
+      value: WRangePrefab
       objectReference: {fileID: 0}
     - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: owner
@@ -597,7 +597,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: animationName
-      value: Shield
+      value: shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
+      propertyPath: maxAttackMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -829,8 +837,8 @@ Transform:
   m_GameObject: {fileID: 878875365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.33, y: -2.24, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: -4.28, y: -0.69, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2030416349}
@@ -852,7 +860,7 @@ MonoBehaviour:
   animator: {fileID: 878875370}
   healthFill: {fileID: 577188946}
   magicFill: {fileID: 1009247110}
-  health: 100
+  health: 75
   magic: 25
   attack: 12
   range: 5
@@ -872,8 +880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750a560998513d240b97318c39831abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPrefab: {fileID: 2030416350}
-  shieldPrefab: {fileID: 2092753785}
+  meleePrefab: {fileID: 2030416350}
+  rangePrefab: {fileID: 2092753785}
   faceIcon: {fileID: 2833711274697811677, guid: 8d4a8c2c212943d4abe673a656b7a834, type: 3}
 --- !u!95 &878875370
 Animator:
@@ -1217,11 +1225,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1310821221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139.64496, y: 207.89476}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -671, y: -3}
   m_SizeDelta: {x: 62.54, y: 33.07}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1009247112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,11 +1379,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2013065825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 5.9839935, y: 0}
   m_SizeDelta: {x: 62.54, y: 33.07}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1096201422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,7 +1595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -182}
+  m_AnchoredPosition: {x: 76, y: -104}
   m_SizeDelta: {x: 62.54, y: 33.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310821222
@@ -1775,15 +1783,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1727855506752996695, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: m_Name
-      value: MeleePrefab
+      value: WMeleePrefab
       objectReference: {fileID: 0}
     - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: owner
       value: 
       objectReference: {fileID: 1772158559}
     - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
+      propertyPath: animationName
+      value: melee
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: maxAttackMultiplier
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
+      propertyPath: minAttackMultiplier
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: maxDefenseMultiplier
@@ -2606,8 +2622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750a560998513d240b97318c39831abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPrefab: {fileID: 1603996087}
-  shieldPrefab: {fileID: 91724532}
+  meleePrefab: {fileID: 1603996087}
+  rangePrefab: {fileID: 91724532}
   faceIcon: {fileID: -4862304518822728533, guid: 834b0755128c4a947afdb0ebf2b851d9, type: 3}
 --- !u!114 &1772158564
 MonoBehaviour:
@@ -2794,12 +2810,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1727855506752996695, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: m_Name
-      value: MeleePrefab
+      value: EMeleePrefab
       objectReference: {fileID: 0}
     - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: owner
       value: 
       objectReference: {fileID: 878875365}
+    - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
+      propertyPath: animationName
+      value: melee
+      objectReference: {fileID: 0}
     - target: {fileID: 6576517204142374927, guid: 67a0e1e41357daf409da97da5a1688fd, type: 3}
       propertyPath: maxAttackMultiplier
       value: 1.2
@@ -2993,7 +3013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054233128581102243, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: m_Name
-      value: RangePrefab
+      value: ERangePrefab
       objectReference: {fileID: 0}
     - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: owner
@@ -3004,8 +3024,12 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
+      propertyPath: magicAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: animationName
-      value: Shield
+      value: range
       objectReference: {fileID: 0}
     - target: {fileID: 5775259303431924857, guid: 13abe836aa01490429f27884640b7923, type: 3}
       propertyPath: maxAttackMultiplier
@@ -3034,11 +3058,57 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5054233128581102243, guid: 13abe836aa01490429f27884640b7923, type: 3}
   m_PrefabInstance: {fileID: 2092753783}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2136619947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2136619949}
+  - component: {fileID: 2136619950}
+  m_Layer: 0
+  m_Name: GameControllerObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2136619949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136619947}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8316634, y: -0.7318566, z: 718.2069}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136619950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136619947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc29f2fc8dfac44783b56e1fd6dc4d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleMenu: {fileID: 619970744}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1321085085}
+  - {fileID: 2136619949}
   - {fileID: 401747899}
   - {fileID: 917751332}
   - {fileID: 1772158562}
