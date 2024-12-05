@@ -21,6 +21,7 @@ public class CharacterAnimator : MonoBehaviour
     SpriteAnimator walkLeftAnim;
 
     SpriteAnimator currentAnim;
+    bool wasPreviouslyMoving;
 
     // REFERENCE
 
@@ -39,6 +40,8 @@ public class CharacterAnimator : MonoBehaviour
 
     private void Update()
     {
+        var prevAnim = currentAnim;
+
         if (MoveX == 1)
             currentAnim = walkRightAnim;
         else if (MoveX == -1)
@@ -47,7 +50,16 @@ public class CharacterAnimator : MonoBehaviour
             currentAnim = walkUpAnim;
         else if (MoveY == -1)
             currentAnim = walkDownAnim;
+
+        if  (currentAnim != prevAnim || isMoving != wasPreviouslyMoving)
+             currentAnim.Start();
             
+        if (isMoving)
+            currentAnim.HandleUpdate();
+        else
+            spriteRenderer.sprite = currentAnim.Frames[0];
+
+        wasPreviouslyMoving = isMoving;
     }
 }
 
