@@ -28,11 +28,11 @@ public class FighterAction : MonoBehaviour
         }
         if(btn.CompareTo("melee") == 0)
         {
-            Debug.Log("Melee Attack!");
+            meleeAttack.GetComponent<ActionScript>().Attack(victim);
         }
         else if(btn.CompareTo("shield") == 0)
         {
-            Debug.Log("Shield Attack!");
+            shieldAttack.GetComponent<ActionScript>().Attack(victim);
         }
         else
         {
