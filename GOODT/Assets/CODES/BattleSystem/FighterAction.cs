@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
 public class FighterAction : MonoBehaviour
 {
     private GameObject enemy;
@@ -29,11 +28,11 @@ public class FighterAction : MonoBehaviour
         }
         if(btn.CompareTo("melee") == 0)
         {
-            Debug.Log("Melee Attack!");
+            meleeAttack.GetComponent<ActionScript>().Attack(victim);
         }
         else if(btn.CompareTo("shield") == 0)
         {
-            Debug.Log("Shield Attack!");
+            shieldAttack.GetComponent<ActionScript>().Attack(victim);
         }
         else
         {
