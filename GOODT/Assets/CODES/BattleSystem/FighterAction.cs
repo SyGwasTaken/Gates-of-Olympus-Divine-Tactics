@@ -2,76 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class FighterAction : MonoBehaviour
 {
-    private GameObject enemy;
     private GameObject hero;
+    private GameObject enemy;
 
     [SerializeField]
-    private GameObject attackPrefab;
+    private GameObject meleePrefab;
 
     [SerializeField]
-    private GameObject shieldPrefab;
+    private GameObject rangePrefab;
 
     [SerializeField]
     private Sprite faceIcon;
 
     private GameObject currentAttack;
-    private GameObject meleeAttack;
-    private GameObject shieldAttack;
-
-    private void Start()
+    
+    void Awake()
     {
-        // Assign hero and enemy dynamically or verify they are assigned
-        hero = GameObject.FindWithTag("Hero");
-        enemy = GameObject.FindWithTag("Enemy");
-
-        if (hero == null || enemy == null)
-        {
-            Debug.LogError("Hero or Enemy is not assigned. Check your tags and scene setup.");
-        }
-
-        // Example of instantiating attacks (if needed)
-        meleeAttack = Instantiate(attackPrefab);
-        shieldAttack = Instantiate(shieldPrefab);
+        hero = GameObject.FindGameObjectWithTag("Hero");
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
     }
-
     public void SelectAttack(string btn)
     {
-        GameObject victim = (tag == "Hero") ? enemy : hero;
-
-        if (victim == null)
+        GameObject victim = hero;
+        if (tag == "Hero")
         {
-            Debug.LogError("Victim is null. Ensure hero or enemy is assigned or instantiated.");
-            return;
+            victim = enemy;
         }
-
         if (btn.CompareTo("melee") == 0)
         {
-            if (meleeAttack != null)
-            {
-                meleeAttack.GetComponent<ActionScript>().Attack(victim);
-            }
-            else
-            {
-                Debug.LogError("meleeAttack is null. Ensure it's properly initialized.");
-            }
-        }
-        else if (btn.CompareTo("shield") == 0)
+            meleePrefab.GetComponent<AttackScript>().Attack(victim);
+
+        } else if (btn.CompareTo("shield") == 0)
         {
-            if (shieldAttack != null)
-            {
-                shieldAttack.GetComponent<ActionScript>().Attack(victim);
-            }
-            else
-            {
-                Debug.LogError("shieldAttack is null. Ensure it's properly initialized.");
-            }
-        }
-        else
+            rangePrefab.GetComponent<AttackScript>().Attack(victim);
+        } else
         {
             Debug.Log("Run");
         }
     }
 }
-
