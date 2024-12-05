@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
-public class FighterStats : MonoBehaviour
+public class FighterStats : MonoBehaviour, IComparable
 {
     [SerializeField]
     private Animator animator;
@@ -18,8 +20,8 @@ public class FighterStats : MonoBehaviour
     public float health;
     public float magic;
     public float attack;
-    public float defense;
     public float range;
+    public float defense;
     public float speed;
     public float experience;
 
@@ -31,7 +33,7 @@ public class FighterStats : MonoBehaviour
 
     private bool dead = false;
 
-    //Reize health and magic bar
+    //Resize health and magic bar
     private Transform healthTransform;
     private Transform magicTransform;
 
@@ -79,5 +81,11 @@ public class FighterStats : MonoBehaviour
         magic = magic - cost;
         xNewMagicScale = magicScale.x * (magic / startMagic);
         magicFill.transform.localScale = new Vector2 (xNewMagicScale, magicScale.y);
+    }
+
+    public int CompareTo(object otherStats)
+    {
+        int nex = nextActTurn.CompareTo(((FighterStats)otherStats).nextActTurn);
+        return nex;
     }
 }

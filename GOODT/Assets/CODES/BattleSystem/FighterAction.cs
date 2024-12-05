@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class FighterAction : MonoBehaviour
 {
     private GameObject enemy;
@@ -19,20 +20,53 @@ public class FighterAction : MonoBehaviour
     private GameObject meleeAttack;
     private GameObject shieldAttack;
 
+    private void Start()
+    {
+        // Assign hero and enemy dynamically or verify they are assigned
+        hero = GameObject.FindWithTag("Hero");
+        enemy = GameObject.FindWithTag("Enemy");
+
+        if (hero == null || enemy == null)
+        {
+            Debug.LogError("Hero or Enemy is not assigned. Check your tags and scene setup.");
+        }
+
+        // Example of instantiating attacks (if needed)
+        meleeAttack = Instantiate(attackPrefab);
+        shieldAttack = Instantiate(shieldPrefab);
+    }
+
     public void SelectAttack(string btn)
     {
-        GameObject victim = hero;
-        if(tag == "Hero")
+        GameObject victim = (tag == "Hero") ? enemy : hero;
+
+        if (victim == null)
         {
-            victim = enemy;
+            Debug.LogError("Victim is null. Ensure hero or enemy is assigned or instantiated.");
+            return;
         }
-        if(btn.CompareTo("melee") == 0)
+
+        if (btn.CompareTo("melee") == 0)
         {
-            meleeAttack.GetComponent<ActionScript>().Attack(victim);
+            if (meleeAttack != null)
+            {
+                meleeAttack.GetComponent<ActionScript>().Attack(victim);
+            }
+            else
+            {
+                Debug.LogError("meleeAttack is null. Ensure it's properly initialized.");
+            }
         }
-        else if(btn.CompareTo("shield") == 0)
+        else if (btn.CompareTo("shield") == 0)
         {
-            shieldAttack.GetComponent<ActionScript>().Attack(victim);
+            if (shieldAttack != null)
+            {
+                shieldAttack.GetComponent<ActionScript>().Attack(victim);
+            }
+            else
+            {
+                Debug.LogError("shieldAttack is null. Ensure it's properly initialized.");
+            }
         }
         else
         {
@@ -40,3 +74,4 @@ public class FighterAction : MonoBehaviour
         }
     }
 }
+
