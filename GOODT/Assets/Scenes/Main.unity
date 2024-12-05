@@ -46509,6 +46509,10 @@ MonoBehaviour:
     lines:
     - In this town
     - We have everythinh
+  sprites:
+  - {fileID: -9112832789274441803, guid: 91a325f418ee58741bf8c5fa99151d12, type: 3}
+  - {fileID: -2155397383169977374, guid: 91a325f418ee58741bf8c5fa99151d12, type: 3}
+  - {fileID: 8615863158077826533, guid: 91a325f418ee58741bf8c5fa99151d12, type: 3}
 --- !u!4 &224511698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3694728851025379580, guid: 18f397a25e0e83849bb748829ef65f31, type: 3}
@@ -49471,6 +49475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines: []
+  sprites:
+  - {fileID: 4106908490439878610, guid: d2bda609c9c81e1479bd876d5635970d, type: 3}
 --- !u!1001 &451778102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94920,7 +94926,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    lines: []
+    lines:
+    - Greetings!!! Adventurer
+    - Welcome to our town.
+  sprites:
+  - {fileID: -4884898030292872152, guid: 91a325f418ee58741bf8c5fa99151d12, type: 3}
+  - {fileID: 5113944940410846634, guid: 91a325f418ee58741bf8c5fa99151d12, type: 3}
+  - {fileID: -8355298950951636878, guid: 91a325f418ee58741bf8c5fa99151d12, type: 3}
 --- !u!1001 &1617685832
 PrefabInstance:
   m_ObjectHideFlags: 0
