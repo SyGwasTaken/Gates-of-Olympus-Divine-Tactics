@@ -10,6 +10,7 @@ public class EnemyNPCController : MonoBehaviour
 
     private Character character;
     private bool isInteracting = false;
+    private bool isCurrentDialog = false;
 
     private void Start()
     {
@@ -42,6 +43,7 @@ public class EnemyNPCController : MonoBehaviour
     {
         if (!isInteracting)
         {
+            isCurrentDialog = true; // Mark this dialog as active
             StartCoroutine(DialogManager.Instance.ShowDialog(dialog)); // Show dialog
             isInteracting = true; // Set interacting flag
         }
@@ -49,8 +51,12 @@ public class EnemyNPCController : MonoBehaviour
 
     private void OnDialogClosed()
     {
-        // After the dialog is closed, load the battle scene
-        LoadBattleScene();
+    // Only trigger scene change if this enemy's dialog was active
+        if (isCurrentDialog)
+        {
+            isCurrentDialog = false; // Reset dialog flag
+            LoadBattleScene();
+        }
     }
 
     private void LoadBattleScene()
