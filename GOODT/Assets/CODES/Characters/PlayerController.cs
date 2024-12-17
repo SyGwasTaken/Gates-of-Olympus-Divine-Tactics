@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
             input.y = Input.GetAxisRaw("Vertical");
 
             // Remove diagonal movement
-            if (input.x != 0) input.y = 0;
+            //if (input.x != 0) input.y = 0;
 
             if (input != Vector2.zero)
             {

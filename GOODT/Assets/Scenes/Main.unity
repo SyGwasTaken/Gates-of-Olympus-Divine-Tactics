@@ -46598,8 +46598,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - In this town
-    - We have everythinh
+    - HELP US!
+    - YOU HAVE TO DEFEAT THE MIGHTY ISNEK!
+    - There are rumors that he is hiding at the heart of the west forest of this
+      town.
   movementPattern:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
@@ -49963,7 +49965,7 @@ GameObject:
   - component: {fileID: 476956061}
   - component: {fileID: 476956060}
   - component: {fileID: 476956059}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: elves_59 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50171,7 +50173,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    lines: []
+    lines:
+    - HELP!!!
+    - Our village leaders need your help.
+    - You will find them infront of the town hall.
+    - It is located just north from here.
+    - HURRY!!! BEFORE THIS TOWN IS OVERTAKEN BY THE SHADOW MONARCH!
   movementPattern:
   - {x: 0, y: -2}
   - {x: 0, y: 2}
@@ -50936,7 +50943,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.27, y: 1.28, z: -1}
+  m_LocalPosition: {x: 41.5, y: 1.8, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86314,7 +86321,7 @@ Transform:
   m_GameObject: {fileID: 1447842411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.27, y: 1.28, z: -1}
+  m_LocalPosition: {x: 41.5, y: 1.8, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96667,7 +96674,7 @@ Transform:
   m_GameObject: {fileID: 1612150121}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.27, y: 1.28, z: 0}
+  m_LocalPosition: {x: 41.5, y: 1.8, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.39}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96960,13 +96967,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - Greetings!!! Adventurer
-    - Welcome to our town.
+    - In order to free this town from the curse...
+    - The mighty isnek must be sent back to shadow realm.
   movementPattern:
-  - {x: 2, y: 0}
-  - {x: 0, y: 2}
-  - {x: -2, y: 0}
-  - {x: 0, y: -2}
+  - {x: 0, y: 0}
   timeBetweenPattern: 3
 --- !u!114 &1616781463
 MonoBehaviour:
